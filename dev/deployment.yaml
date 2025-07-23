@@ -1,5 +1,5 @@
 # deployment.yaml
-apiVersion: apps/v1
+apiVersion: apps/v2
 kind: Deployment
 metadata:
   name: iot-app
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: iot-container
-          image: wil42/playground:v1
+          image: wil42/playground:v2
           ports:
             - containerPort: 8888
 
